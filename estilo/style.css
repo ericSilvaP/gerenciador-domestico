@@ -64,3 +64,10 @@ h1 {
     flex-flow: column wrap;
     justify-content: center;
 }
+
+td > select {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    border: none;
+}

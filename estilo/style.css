@@ -25,7 +25,7 @@ table,th,td {
     border: 2px solid black;
     border-collapse: collapse;
     flex-shrink: 1;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 table {
@@ -39,21 +39,7 @@ tr {
 td {
     min-width: 70px;
 }
-
-td {
-    cursor: pointer;
-}
-
-.selected {
-    background-color: blue;
-    transition: 300ms;
-}
 /*fim tabela*/
-
-iframe {
-    margin: auto;
-    border: 1px dotted black;
-}
 
 h1 {
     text-align: center;
@@ -71,7 +57,8 @@ td > select {
     width: 100%;
     text-align: center;
     border: none;
-    font-size: 1em;
+    font-size: 0.9em;
+    background-color: #cccccc00;
 }
 
 .multi-select {
@@ -81,10 +68,11 @@ td > select {
 
 .select-box {
     width: 200px;
-    border: 1px solid #ccc;
+ 
     padding: 10px;
     cursor: pointer;
-    background-color: white;
+    
+    background-color: #cccccc00;
 }
 
 .select-box .options {

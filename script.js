@@ -11,7 +11,7 @@ rows.forEach(row => {
      });
  });
 
-
+/*solução api access server num sei oq
  document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('enviar').addEventListener('click', async function() {
         const tarefas = [
@@ -43,4 +43,25 @@ rows.forEach(row => {
             console.error('Erro ao salvar o arquivo:', err);
         }
     });
+});*/
+function downloadFile(content, fileName, mimeType) {
+    const blob = new Blob([content], { type: mimeType });
+    const link = document.createElement('a');
+    link.href = URL.createObjectURL(blob);
+    link.download = fileName;
+    link.click();
+}
+
+document.getElementById('enviar').addEventListener('click', function() {
+    const tarefas = [
+        { nome: 'Varrer a casa', tempo: document.getElementById('tasks1').value },
+        { nome: 'Lavar louça', tempo: document.getElementById('tasks2').value },
+        { nome: 'Cozinhar', tempo: document.getElementById('tasks3').value },
+        { nome: 'Lavar banheiro', tempo: document.getElementById('tasks4').value }
+    ];
+
+    let resultado = tarefas.map(tarefa => `${tarefa.nome}: ${tarefa.tempo} minutos`).join('\n');
+
+    // Usar Blob para download
+    downloadFile(resultado, 'tarefas_domesticas.txt', 'text/plain');
 });

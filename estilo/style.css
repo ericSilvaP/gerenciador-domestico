@@ -16,18 +16,27 @@ main {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
+    
 }
 
-h1 {
-    text-align: center;
-    margin: 20px 0;
-}
 
+/*comeco tabela*/
 table,th,td {
     border: 2px solid black;
     border-collapse: collapse;
+    flex-shrink: 1;
+}
 
-    
+table {
+    margin: auto;
+}
+
+tr {
+    height: 50px;
+}
+
+td {
+    min-width: 70px;
 }
 
 td {
@@ -37,6 +46,17 @@ td {
 .selected {
     background-color: blue;
     transition: 300ms;
+}
+/*fim tabela*/
+
+iframe {
+    margin: auto;
+    border: 1px dotted black;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
 }
 
 #box {

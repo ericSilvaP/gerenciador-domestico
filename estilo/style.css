@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    background-color: red;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+table,th,td {
+    border: 2px solid black;
+    border-collapse: collapse;
+
+    
+}
+
+td {
+    cursor: pointer;
+}
+
+.selected {
+    background-color: blue;
+    transition: 300ms;
+}
+
+#box {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}

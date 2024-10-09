@@ -3,12 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/styletable.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Tarefas Domésticas</title>
 </head>
 <body>
     
+    <main>
+        <h1>Tarefas Domésticas</h1>
+        <div id="box">
+          <table>
+            <thead>
+              <tr>
+                <th>Tarefas</th>
+                <th>Tempo estimado</th>
+                <th>Dias da semana</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Varrer a casa</td>
+                    <td>
+                      <select name="tasks1" id="tasks1">
+                        <option value="0">Não</option>
+                        <option value="15">15 min</option>
+                        <option value="30">30 min</option>
+                        <option value="60">1 hora</option>
+                        <option value="120">2 horas</option>
+                        <option value="1440">Dia inteiro</option>
+                      </select>
+                    </td>
+                    <td>
+                        <div class="multi-select" data-task="task1">
+                          <div class="select-box">
+                            <span class="selected">Selecione os dias</span>
+                            <div class="options">
+                              <label><input type="checkbox" value="Segunda"> Segunda</label>
+                              <label><input type="checkbox" value="Terça"> Terça</label>
+                              <label><input type="checkbox" value="Quarta"> Quarta</label>
+                              <label><input type="checkbox" value="Quinta"> Quinta</label>
+                              <label><input type="checkbox" value="Sexta"> Sexta</label>
+                              <label><input type="checkbox" value="Sábado"> Sábado</label>
+                              <label><input type="checkbox" value="Domingo"> Domingo</label>
+                            </div>
+                           </div>
+                        </div>
+                    </td>
+                      
+                      
+                </tr>
+                <tr>
+                    <td>Lavar louça</td>
+                    <td>
+                      <select name="tasks2" id="tasks2">
+                        <option value="0">Não</option>
+                        <option value="15">15 min</option>
+                        <option value="30">30 min</option>
+                        <option value="60">1 hora</option>
+                        <option value="120">2 horas</option>
+                        <option value="1440">Dia inteiro</option>
+                      </select>
+                    </td>
+                    <td>
+                        <div class="multi-select" data-task="task2">
+                          <div class="select-box">
+                            <span class="selected">Selecione os dias</span>
+                            <div class="options">
+                              <label><input type="checkbox" value="Segunda"> Segunda</label>
+                              <label><input type="checkbox" value="Terça"> Terça</label>
+                              <label><input type="checkbox" value="Quarta"> Quarta</label>
+                              <label><input type="checkbox" value="Quinta"> Quinta</label>
+                              <label><input type="checkbox" value="Sexta"> Sexta</label>
+                              <label><input type="checkbox" value="Sábado"> Sábado</label>
+                              <label><input type="checkbox" value="Domingo"> Domingo</label>
+                            </div>
+                           </div>
+                        </div>
+                    </td>
+                      
+                </tr>
+                <tr>
+                    <td>Cozinhar</td>
+                    <td>
+                      <select name="tasks3" id="tasks3">
+                        <option value="0">Não</option>
+                        <option value="15">15 min</option>
+                        <option value="30">30 min</option>
+                        <option value="60">1 hora</option>
+                        <option value="120">2 horas</option>
+                        <option value="1440">Dia inteiro</option>
+                      </select>
+                    </td>
+                    <td>
+                        <div class="multi-select" data-task="task3">
+                          <div class="select-box">
+                            <span class="selected">Selecione os dias</span>
+                            <div class="options">
+                              <label><input type="checkbox" value="Segunda"> Segunda</label>
+                              <label><input type="checkbox" value="Terça"> Terça</label>
+                              <label><input type="checkbox" value="Quarta"> Quarta</label>
+                              <label><input type="checkbox" value="Quinta"> Quinta</label>
+                              <label><input type="checkbox" value="Sexta"> Sexta</label>
+                              <label><input type="checkbox" value="Sábado"> Sábado</label>
+                              <label><input type="checkbox" value="Domingo"> Domingo</label>
+                            </div>
+                           </div>
+                        </div>
+                    </td>
+                      
+                </tr>
+                <tr>
+                    <td>Lavar banheiro</td>
+                    <td>
+                      <select name="tasks4" id="tasks4">
+                        <option value="0">Não</option>
+                        <option value="15">15 min</option>
+                        <option value="30">30 min</option>
+                        <option value="60">1 hora</option>
+                        <option value="120">2 horas</option>
+                        <option value="1440">Dia inteiro</option>
+                      </select>
+                    </td>
+                    <td>
+                        <div class="multi-select" data-task="task4">
+                          <div class="select-box">
+                            <span class="selected">Selecione os dias</span>
+                            <div class="options">
+                              <label><input type="checkbox" value="Segunda"> Segunda</label>
+                              <label><input type="checkbox" value="Terça"> Terça</label>
+                              <label><input type="checkbox" value="Quarta"> Quarta</label>
+                              <label><input type="checkbox" value="Quinta"> Quinta</label>
+                              <label><input type="checkbox" value="Sexta"> Sexta</label>
+                              <label><input type="checkbox" value="Sábado"> Sábado</label>
+                              <label><input type="checkbox" value="Domingo"> Domingo</label>
+                            </div>
+                           </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jogar o lixo</td>
+                    <td>
+                      <select name="tasks4" id="tasks4">
+                        <option value="0">Não</option>
+                        <option value="15">15 min</option>
+                        <option value="30">30 min</option>
+                        <option value="60">1 hora</option>
+                        <option value="120">2 horas</option>
+                        <option value="1440">Dia inteiro</option>
+                      </select>
+                    </td>
+                    <td>
+                        <div class="multi-select" data-task="task4">
+                          <div class="select-box">
+                            <span class="selected">Selecione os dias</span>
+                            <div class="options">
+                              <label><input type="checkbox" value="Segunda"> Segunda</label>
+                              <label><input type="checkbox" value="Terça"> Terça</label>
+                              <label><input type="checkbox" value="Quarta"> Quarta</label>
+                              <label><input type="checkbox" value="Quinta"> Quinta</label>
+                              <label><input type="checkbox" value="Sexta"> Sexta</label>
+                              <label><input type="checkbox" value="Sábado"> Sábado</label>
+                              <label><input type="checkbox" value="Domingo"> Domingo</label>
+                            </div>
+                           </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lavar roupa</td>
+                    <td>
+                      <select name="tasks4" id="tasks4">
+                        <option value="0">Não</option>
+                        <option value="15">15 min</option>
+                        <option value="30">30 min</option>
+                        <option value="60">1 hora</option>
+                        <option value="120">2 horas</option>
+                        <option value="1440">Dia inteiro</option>
+                      </select>
+                    </td>
+                    <td>
+                        <div class="multi-select" data-task="task4">
+                          <div class="select-box">
+                            <span class="selected">Selecione os dias</span>
+                            <div class="options">
+                              <label><input type="checkbox" value="Segunda"> Segunda</label>
+                              <label><input type="checkbox" value="Terça"> Terça</label>
+                              <label><input type="checkbox" value="Quarta"> Quarta</label>
+                              <label><input type="checkbox" value="Quinta"> Quinta</label>
+                              <label><input type="checkbox" value="Sexta"> Sexta</label>
+                              <label><input type="checkbox" value="Sábado"> Sábado</label>
+                              <label><input type="checkbox" value="Domingo"> Domingo</label>
+                            </div>
+                           </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lavar banheiro</td>
+                    <td>
+                      <select name="tasks4" id="tasks4">
+                        <option value="0">Não</option>
+                        <option value="15">15 min</option>
+                        <option value="30">30 min</option>
+                        <option value="60">1 hora</option>
+                        <option value="120">2 horas</option>
+                        <option value="1440">Dia inteiro</option>
+                      </select>
+                    </td>
+                    <td>
+                        <div class="multi-select" data-task="task4">
+                          <div class="select-box">
+                            <span class="selected">Selecione os dias</span>
+                            <div class="options">
+                              <label><input type="checkbox" value="Segunda"> Segunda</label>
+                              <label><input type="checkbox" value="Terça"> Terça</label>
+                              <label><input type="checkbox" value="Quarta"> Quarta</label>
+                              <label><input type="checkbox" value="Quinta"> Quinta</label>
+                              <label><input type="checkbox" value="Sexta"> Sexta</label>
+                              <label><input type="checkbox" value="Sábado"> Sábado</label>
+                              <label><input type="checkbox" value="Domingo"> Domingo</label>
+                            </div>
+                           </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lavar banheiro</td>
+                    <td>
+                      <select name="tasks4" id="tasks4">
+                        <option value="0">Não</option>
+                        <option value="15">15 min</option>
+                        <option value="30">30 min</option>
+                        <option value="60">1 hora</option>
+                        <option value="120">2 horas</option>
+                        <option value="1440">Dia inteiro</option>
+                      </select>
+                    </td>
+                    <td>
+                        <div class="multi-select" data-task="task4">
+                          <div class="select-box">
+                            <span class="selected">Selecione os dias</span>
+                            <div class="options">
+                              <label><input type="checkbox" value="Segunda"> Segunda</label>
+                              <label><input type="checkbox" value="Terça"> Terça</label>
+                              <label><input type="checkbox" value="Quarta"> Quarta</label>
+                              <label><input type="checkbox" value="Quinta"> Quinta</label>
+                              <label><input type="checkbox" value="Sexta"> Sexta</label>
+                              <label><input type="checkbox" value="Sábado"> Sábado</label>
+                              <label><input type="checkbox" value="Domingo"> Domingo</label>
+                            </div>
+                           </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+          
+          <div id="buttons">
+            <button id="enviar">Enviar</button>
+          </div>
 
-      <script src="script.js"></script>
+        </div>
+    </main>
+
+    <script src="script2.js"></script>
 </body>
 </html>

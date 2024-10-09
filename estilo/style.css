@@ -25,6 +25,7 @@ table,th,td {
     border: 2px solid black;
     border-collapse: collapse;
     flex-shrink: 1;
+    font-size: 1.2em;
 }
 
 table {
@@ -70,4 +71,40 @@ td > select {
     width: 100%;
     text-align: center;
     border: none;
+    font-size: 1em;
+}
+
+.multi-select {
+    position: relative;
+    display: inline-block;
+}
+
+.select-box {
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.select-box .options {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+    width: 100%;
+}
+
+.select-box:hover .options {
+    display: block;
+}
+
+.options label {
+    display: block;
+    padding: 5px;
+}
+
+.options label:hover {
+    background-color: #f1f1f1;
 }

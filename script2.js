@@ -11,7 +11,10 @@ document.getElementById('enviar').addEventListener('click', function() {
         { nome: 'Varrer a casa', tempo: document.getElementById('tasks1').value, dias: getSelectedDays('task1') },
         { nome: 'Lavar louça', tempo: document.getElementById('tasks2').value, dias: getSelectedDays('task2') },
         { nome: 'Cozinhar', tempo: document.getElementById('tasks3').value, dias: getSelectedDays('task3') },
-        { nome: 'Lavar banheiro', tempo: document.getElementById('tasks4').value, dias: getSelectedDays('task4') }
+        { nome: 'Lavar banheiro', tempo: document.getElementById('tasks4').value, dias: getSelectedDays('task4') },
+        { nome: 'Lavar louça', tempo: document.getElementById('tasks5').value, dias: getSelectedDays('task5') },
+        { nome: 'Cozinhar', tempo: document.getElementById('tasks6').value, dias: getSelectedDays('task6') },
+        { nome: 'Lavar banheiro', tempo: document.getElementById('tasks7').value, dias: getSelectedDays('task7') }
     ];
 
     let resultado = tarefas.map(tarefa => {
@@ -28,3 +31,30 @@ function getSelectedDays(taskId) {
     const checkboxes = document.querySelectorAll(`.multi-select[data-task="${taskId}"] input[type="checkbox"]`);
     return Array.from(checkboxes).filter(checkbox => checkbox.checked).map(checkbox => checkbox.value);
 }
+
+function toggleDropdown(taskId) {
+    const options = document.querySelector(`.multi-select[data-task="${taskId}"] .options`);
+    options.style.display = options.style.display === 'block' ? 'none' : 'block';
+}
+
+function updateSelectedDays(taskId) {
+    const checkboxes = document.querySelectorAll(`.multi-select[data-task="${taskId}"] input[type="checkbox"]`);
+    const selectedDays = Array.from(checkboxes).filter(checkbox => checkbox.checked).map(checkbox => checkbox.value);
+    const selectedText = selectedDays.length > 0 ? selectedDays.join(', ') : 'Selecione os dias';
+    document.querySelector(`.multi-select[data-task="${taskId}"] .selected`).innerText = selectedText;
+
+    // Altera a classe do select-box com base na seleção
+    const selectBox = document.querySelector(`.multi-select[data-task="${taskId}"] .select-box`);
+    if (selectedDays.length > 0) {
+        selectBox.classList.add('selected-day'); // Classe que indica que dias estão selecionados
+    } else {
+        selectBox.classList.remove('selected-day');
+    }
+}
+
+// Adicionando evento de clique para cada checkbox
+document.querySelectorAll('.multi-select input[type="checkbox"]').forEach(checkbox => {
+    checkbox.addEventListener('click', function() {
+        updateSelectedDays(this.closest('.multi-select').dataset.task);
+    });
+});

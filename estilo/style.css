@@ -11,12 +11,31 @@ html, body {
     height: 100vh;
 }
 
+@media (max-width: 600px) {
+    .multi-select {
+        width: 100%; /* Faz o multi-select ocupar toda a largura em dispositivos móveis */
+    }
+    
+    .select-box {
+        width: 100%; /* Ajusta a largura do select-box */
+    }
+
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+
 main {
-    background-color: red;
+    background-color: white;
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    
+    justify-content: center;
+  
+    height: 100vh;
 }
 
 
@@ -25,15 +44,25 @@ table,th,td {
     border: 2px solid black;
     border-collapse: collapse;
     flex-shrink: 1;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 table {
     margin: auto;
 }
 
+thead > tr {
+    background-color: black;
+    color: white;
+    
+}
+
 tr {
     height: 50px;
+}
+
+tbody tr:nth-child(even) { /* 2n */
+    background-color: lightgray;
 }
 
 td {
@@ -95,4 +124,28 @@ td > select {
 
 .options label:hover {
     background-color: #f1f1f1;
+}
+
+.selected-day {
+    background-color: #e0ffe0; /* Cor de fundo para indicar seleção */
+    border: 1px solid #4caf50; /* Bord2.5px solid blacka verde para indicar seleção */
+}
+
+#buttons {
+   
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 6.5px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+
 }

@@ -11,21 +11,6 @@ html, body {
     height: 100vh;
 }
 
-@media (max-width: 600px) {
-    .multi-select {
-        width: 100%; /* Faz o multi-select ocupar toda a largura em dispositivos móveis */
-    }
-    
-    .select-box {
-        width: 100%; /* Ajusta a largura do select-box */
-    }
-
-    table {
-        width: 100%;
-        display: block;
-        overflow-x: auto;
-    }
-}
 
 
 main {
@@ -34,7 +19,6 @@ main {
     flex-flow: column wrap;
     align-content: center;
     justify-content: center;
-  
     height: 100vh;
 }
 
@@ -44,7 +28,7 @@ table,th,td {
     border: 2px solid black;
     border-collapse: collapse;
     flex-shrink: 1;
-    font-size: 1em;
+    font-size: 0.95em;
 }
 
 table {
@@ -67,6 +51,7 @@ tbody tr:nth-child(even) { /* 2n */
 
 td {
     min-width: 70px;
+
 }
 /*fim tabela*/
 
@@ -97,10 +82,8 @@ td > select {
 
 .select-box {
     width: 200px;
- 
     padding: 10px;
     cursor: pointer;
-    
     background-color: #cccccc00;
 }
 
